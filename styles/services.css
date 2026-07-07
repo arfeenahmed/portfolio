@@ -1,0 +1,122 @@
+#services.content.active{
+    
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+#services h1{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#services h1 span{
+    color: var(--green);
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+    padding: 1rem;
+    /* place-items: center; */
+    
+    justify-items: stretch;
+
+}
+.box{
+    /* display: grid; */
+      display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+    padding: 1.6rem;
+    border-radius: 10px;
+    gap: 1rem;
+      width: 100%;
+    max-width: none;
+    height: 100%;
+    max-width: 450px;
+    border: 3px solid transparent;
+    transition: all linear 0.3s;
+}
+.box:hover{
+    border-color: var(--green);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px var(--green),-5px 5px 5px var(--green),
+    5px -5px 5px var(--green),-5px -5px 5px var(--green);
+}
+.head-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-icon span{
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--primary);
+    border: 2px solid transparent;
+    transition: all linear 0.3s;
+    transform: rotate(-45deg);
+
+}
+.head-icon span:hover{
+    background-color: var(--green);
+    transform: rotate(-90deg);
+}
+.head-icon i{
+    font-size: 2rem;
+}
+.head-icon span i{
+    font-size: 1rem;
+    font-weight: 900;
+}
+.box h3{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--green);
+    /* margin-bottom: 1rem; */
+}
+.spacer{
+    flex-grow: 1;
+}
+.box p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+}
+@media (min-width: 768px) {
+    .services-list{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    #services h1{
+        font-size: 4rem;
+    }
+
+    .box h3{
+        text-align: left;
+    }
+}
+@media (min-width: 1024px) {
+   .services-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.box h3{
+    font-size: 1.8rem;
+
+}
+.box p{
+    font-family: 1.2rem;
+}
+}
