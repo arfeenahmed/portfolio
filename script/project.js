@@ -1,5 +1,19 @@
 const projectsList = [
-
+{
+  title: "Personal Portfolio Website",
+  image: "assets/portfolio.png",
+  description:
+    "A modern, fully responsive personal portfolio website showcasing my skills, experience, services, and projects. Built using HTML, CSS, and JavaScript with smooth animations, dynamic content rendering, and a contact form integrated with Formspree.",
+  technologies: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Responsive Design",
+    "Formspree"
+  ],
+  github: "https://github.com/arfeenahmed/portfolio",
+  demo: "https://arfeenahmedportfolio.netlify.app/"
+},
   {
     title: "Arsh Foundation Website",
     image: "assets/arsh.png",
