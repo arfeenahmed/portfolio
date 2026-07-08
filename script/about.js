@@ -36,11 +36,7 @@ const educationList = [
     degree: "HDSE (Higher Diploma in Software Engineering)",
     institute: "Aptech Pakistan",
   },
-  {
-    duration: "2025",
-    degree: "E-Commerce & Digital Marketing",
-    institute: "Aptech Pakistan",
-  },
+ 
   {
     duration: "2024",
     degree: "Intermediate (Computer Science)",
@@ -48,7 +44,7 @@ const educationList = [
   },
   {
     duration: "2022",
-    degree: "Matriculation (A Grade)",
+    degree: "Matriculation (A+ Grade)",
     institute: "Board of Secondary Education",
   },
 ];

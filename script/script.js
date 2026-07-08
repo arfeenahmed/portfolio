@@ -79,6 +79,7 @@ navlinks.forEach((link) => {
         tab.classList.remove("active");
       }
       toggle.checked =false;
+document.body.classList.remove("no-scroll");
     });
 
     if (tabName === "services") {

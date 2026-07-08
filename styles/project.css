@@ -173,18 +173,82 @@
    Responsive
 =========================== */
 
-@media(max-width:768px){
+/* ===========================
+   Responsive
+=========================== */
 
-.section-title{
-    font-size:2.3rem;
+/* Tablets */
+@media (max-width: 992px) {
+    .projects-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 912px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-card {
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/* Mobile */
+@media (max-width: 768px){
+
+    #projects.content{
+        width:95%;
+    }
+
+    .section-title{
+        font-size:2.3rem;
+    }
+
+    .projects-list{
+        grid-template-columns:1fr;
+    }
+
+    .project-image{
+        height:210px;
+    }
+
+    .project-btn{
+        flex-direction:column;
+    }
 }
 
-.project-image{
-    height:210px;
-}
+/* Small Mobile */
+@media (max-width:480px){
 
-.project-btn{
-    flex-direction:column;
-}
+    .project-card{
+        border-radius:15px;
+    }
 
+    .project-info{
+        padding:1.2rem;
+    }
+
+    .project-info h3{
+        font-size:1.25rem;
+    }
+
+    .project-info p{
+        font-size:.9rem;
+    }
+
+    .tech-stack span{
+        font-size:.75rem;
+        padding:.4rem .7rem;
+    }
+
+    .project-btn a{
+        padding:.75rem;
+        font-size:.9rem;
+    }
+
+    .project-image{
+        height:190px;
+    }
 }
